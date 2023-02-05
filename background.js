@@ -26,10 +26,10 @@ function checkurl() {
     }); 
 }
 
-chrome.tabs.onActivated.addListener( function() { 
+browser.tabs.onActivated.addListener( function() { 
     checkurl()
       })
   
-   chrome.tabs.onUpdated.addListener(function() {
+   browser.tabs.onUpdated.addListener(function() {
     checkurl()
     })
